@@ -12,7 +12,7 @@ The created EC2 instance will be accessible via SSM, and only port 53 will be op
 
 In the `jajdns.tf` file, add a statement like this one:
 
-```json
+```terraform
 module "jajdns_poc_exfil" {
   source       = "./modules/jajdns"
   name         = "JAJDNS"
